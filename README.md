@@ -7,4 +7,5 @@ Pereyra Exebio Dylan Patrick <br>
 Pariona Malásquez, Alejandro Felix <br>
 Quispe mamani noe<br>
 Mendoza bermejo, Darwin Karls<br>
+<b>Lenguajes y Tecnologías utilizadas:</b> HTML, Nodejs, CSS, MySQL, JavaScript, Expressjs
 
