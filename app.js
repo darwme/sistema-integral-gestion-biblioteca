@@ -1,17 +1,35 @@
-const http = require("node:http");
-const { findAvailablePort } = require("./findAvailablePort.js");
+import express from "express";
+import { findAvailablePort } from "./findAvailablePort.js";
+import dotenv from "dotenv";
+import mysql from "mysql2";
 
-require("dotenv").config();
+/*Como importar json:
+import fs from "node:fs";
+const movie = JSON.parse(fs.readFileSync("movie.json", "utf-8"));
+
+o tambien creanddo require:
+import {createRequire} from "node:module";
+const require = createRequire(import.meta.url);
+const movie = require("./movie.json");
+*/
+
+const app = express();
+app.disable("x-powered-by");
+
+dotenv.config();
+
+const connection = mysql.createConnection(process.env.DATABASE_URL);
+console.log("Connected to PlanetScale!");
+connection.end();
 
 const desiredPort = process.env.PORT ?? 3000;
-const server = http.createServer((req, res) => {
-  console.log("Request received", req.url);
-  console.log("Rsponse sended", res.url);
-  res.end("Hello, World!");
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
 findAvailablePort(desiredPort).then((port) => {
-  server.listen(port, () => {
+  app.listen(port, () => {
     console.log(`Server listening on port http://localhost:${port}`);
   });
 });
