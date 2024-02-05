@@ -6,12 +6,11 @@ import mysql from "mysql2";
 /*Como importar json:
 import fs from "node:fs";
 const movie = JSON.parse(fs.readFileSync("movie.json", "utf-8"));
-
-o tambien creanddo require:
-import {createRequire} from "node:module";
-const require = createRequire(import.meta.url);
-const movie = require("./movie.json");
 */
+
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
+const books = require("./book/books.json");
 
 const app = express();
 app.disable("x-powered-by");
@@ -26,6 +25,19 @@ const desiredPort = process.env.PORT ?? 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+});
+
+app.get("/books", (req, res) => {
+  res.json(books);
+});
+
+app.get("/books/:id", (req, res) => {
+  const book = books.find((book) => book.id === req.params.id);
+  if (book) {
+    res.json(book);
+  } else {
+    res.status(404).send("Book not found");
+  }
 });
 
 findAvailablePort(desiredPort).then((port) => {
