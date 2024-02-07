@@ -1,2 +1,1 @@
-GET http://localhost:1234/books/2c8d250d-af89-41ee-9042-81694675a59f
-
+GET http://localhost:1234/api/v1/books/2c8d250d-af89-41ee-9042-81694675a59f
