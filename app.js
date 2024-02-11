@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(corsMiddleware());
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Working on /libros and /libros/:id");
 });
 
 app.use("/libros", librosRouter);
