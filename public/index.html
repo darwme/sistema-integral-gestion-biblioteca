@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listado de Libros</title>
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        article {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        img {
+            width: 280px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+
+<script type="module">
+    fetch('http://localhost:1234/libros')
+        .then(response => response.json())
+        .then(libros => {
+            const html = libros.map(libro =>{
+                return `
+                    <article data-id = "${libro.id_libro}">
+                        <h2>${libro.titulo}</h2>
+                        <img src="${libro.imageLink}" alt="${libro.titulo}">
+                        <p>${libro.autor}</p>
+
+                        <button>Eliminar</button>
+                    </article>
+                    `
+            }).join('');
+            document.querySelector('main').innerHTML = html;
+            document.addEventListener('click', e =>{
+                if(e.target.matches('button')){
+                    const article = e.target.closest('article');
+                    const id = article.dataset.id_libro;
+                    fetch(`http://localhost:3000/libros/${id}`, {
+                        method: 'DELETE'
+                    })
+                    .then(res => res.json())
+                    .then(res => {
+                        if(res.ok){
+                            article.remove();
+                        
+                        }
+                    })
+                }
+            })
+        });
+</script>
+  </head>
+  <body>
+    <main></main>
+  </body>
+</html>

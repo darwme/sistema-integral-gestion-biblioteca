@@ -1,374 +1,227 @@
 [
   {
-    "titulo": "Things Fall Apart",
-    "autor": "Chinua Achebe",
-    "pais": "Nigeria",
-    "anhio": 1958,
-    "lenguaje": "English",
-    "paginas": 209,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/things-fall-apart.jpg",
-    "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart"
-  },
-  {
-    "titulo": "Fairy tales",
-    "autor": "Hans Christian Andersen",
-    "pais": "Denmark",
-    "anhio": 1836,
-    "lenguaje": "Danish",
-    "paginas": 784,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/fairy-tales.jpg",
-    "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection."
-  },
-  {
-    "titulo": "The Divine Comedy",
-    "autor": "Dante Alighieri",
-    "pais": "Italy",
-    "anhio": 1315,
-    "lenguaje": "Italian",
-    "paginas": 928,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/the-divine-comedy.jpg",
-    "link": "https://en.wikipedia.org/wiki/Divine_Comedy"
-  },
-  {
-    "titulo": "The Epic Of Gilgamesh",
-    "autor": "Unknown",
-    "pais": "Sumer and Akkadian Empire",
-    "anhio": -1700,
-    "lenguaje": "Akkadian",
-    "paginas": 160,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/the-epic-of-gilgamesh.jpg",
-    "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
-  },
-  {
-    "titulo": "The Book Of Job",
-    "autor": "Unknown",
-    "pais": "Achaemenid Empire",
-    "anhio": -600,
-    "lenguaje": "Hebrew",
-    "paginas": 176,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/the-book-of-job.jpg",
-    "link": "https://en.wikipedia.org/wiki/Book_of_Job"
-  },
-  {
-    "titulo": "One Thousand and One Nights",
-    "autor": "Unknown",
-    "pais": "India/Iran/Iraq/Egypt/Tajikistan",
-    "anhio": 1200,
-    "lenguaje": "Arabic",
-    "paginas": 288,
-    "disponibilidad": true,
-    "cantidad": 2,
-    "imageLink": "images/one-thousand-and-one-nights.jpg",
-    "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights"
-  },
-  {
+    "id_categoria": 1,
     "titulo": "Njál's Saga",
     "autor": "Unknown",
-    "pais": "Iceland",
-    "anhio": 1350,
-    "lenguaje": "Old Norse",
-    "paginas": 384,
+    "isbn": "9780140447699",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/njals-saga.jpg",
-    "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga"
+    "imageLink": "/images/njals-saga.jpg"
   },
   {
+    "id_categoria": 2,
     "titulo": "Pride and Prejudice",
     "autor": "Jane Austen",
-    "pais": "United Kingdom",
-    "anhio": 1813,
-    "lenguaje": "English",
-    "paginas": 226,
+    "isbn": "9780141439518",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/pride-and-prejudice.jpg",
-    "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice"
+    "imageLink": "/images/pride-and-prejudice.jpg"
   },
   {
+    "id_categoria": 3,
     "titulo": "Le Père Goriot",
     "autor": "Honoré de Balzac",
-    "pais": "France",
-    "anhio": 1835,
-    "lenguaje": "French",
-    "paginas": 443,
+    "isbn": "9780140440164",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/le-pere-goriot.jpg",
-    "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot"
+    "imageLink": "/images/le-pere-goriot.jpg"
   },
   {
+    "id_categoria": 4,
     "titulo": "Molloy, Malone Dies, The Unnamable, the trilogy",
     "autor": "Samuel Beckett",
-    "pais": "Republic of Ireland",
-    "anhio": 1952,
-    "lenguaje": "French, English",
-    "paginas": 256,
+    "isbn": "9780802151361",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/molloy-malone-dies-the-unnamable.jpg",
-    "link": "https://en.wikipedia.org/wiki/Molloy_(novel)"
+    "imageLink": "/images/molloy-malone-dies-the-unnamable.jpg"
   },
   {
+    "id_categoria": 5,
     "titulo": "The Decameron",
     "autor": "Giovanni Boccaccio",
-    "pais": "Italy",
-    "anhio": 1351,
-    "lenguaje": "Italian",
-    "paginas": 1024,
+    "isbn": "9780140449303",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/the-decameron.jpg",
-    "link": "https://en.wikipedia.org/wiki/The_Decameron"
+    "imageLink": "/images/the-decameron.jpg"
   },
   {
+    "id_categoria": 6,
     "titulo": "Ficciones",
     "autor": "Jorge Luis Borges",
-    "pais": "Argentina",
-    "anhio": 1965,
-    "lenguaje": "Spanish",
-    "paginas": 224,
+    "isbn": "9780802130304",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/ficciones.jpg",
-    "link": "https://en.wikipedia.org/wiki/Ficciones"
+    "imageLink": "/images/ficciones.jpg"
   },
   {
+    "id_categoria": 7,
     "titulo": "Wuthering Heights",
     "autor": "Emily Brontë",
-    "pais": "United Kingdom",
-    "anhio": 1847,
-    "lenguaje": "English",
-    "paginas": 342,
+    "isbn": "9780141439556",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/wuthering-heights.jpg",
-    "link": "https://en.wikipedia.org/wiki/Wuthering_Heights"
+    "imageLink": "/images/wuthering-heights.jpg"
   },
   {
+    "id_categoria": 8,
     "titulo": "The Stranger",
     "autor": "Albert Camus",
-    "pais": "Algeria, French Empire",
-    "anhio": 1942,
-    "lenguaje": "French",
-    "paginas": 185,
+    "isbn": "9780679720201",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/l-etranger.jpg",
-    "link": "https://en.wikipedia.org/wiki/The_Stranger_(novel)"
+    "imageLink": "/images/l-etranger.jpg"
   },
   {
+    "id_categoria": 9,
     "titulo": "Poems",
     "autor": "Paul Celan",
-    "pais": "Romania, France",
-    "anhio": 1952,
-    "lenguaje": "German",
-    "paginas": 320,
+    "isbn": "9780802135743",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/poems-paul-celan.jpg",
-    "link": ""
+    "imageLink": "/images/poems-paul-celan.jpg"
   },
   {
+    "id_categoria": 10,
     "titulo": "Journey to the End of the Night",
     "autor": "Louis-Ferdinand Céline",
-    "pais": "France",
-    "anhio": 1932,
-    "lenguaje": "French",
-    "paginas": 505,
+    "isbn": "9780811216548",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/voyage-au-bout-de-la-nuit.jpg",
-    "link": "https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night"
+    "imageLink": "/images/voyage-au-bout-de-la-nuit.jpg"
   },
   {
+    "id_categoria": 11,
     "titulo": "Don Quijote De La Mancha",
     "autor": "Miguel de Cervantes",
-    "pais": "Spain",
-    "anhio": 1610,
-    "lenguaje": "Spanish",
-    "paginas": 1056,
+    "isbn": "9788424118257",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/don-quijote-de-la-mancha.jpg",
-    "link": "https://en.wikipedia.org/wiki/Don_Quixote"
+    "imageLink": "/images/don-quijote-de-la-mancha.jpg"
   },
   {
+    "id_categoria": 12,
     "titulo": "The Canterbury Tales",
     "autor": "Geoffrey Chaucer",
-    "pais": "England",
-    "anhio": 1450,
-    "lenguaje": "English",
-    "paginas": 544,
+    "isbn": "9780140424386",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/the-canterbury-tales.jpg",
-    "link": "https://en.wikipedia.org/wiki/The_Canterbury_Tales"
+    "imageLink": "/images/the-canterbury-tales.jpg"
   },
   {
+    "id_categoria": 13,
     "titulo": "Stories",
     "autor": "Anton Chekhov",
-    "pais": "Russia",
-    "anhio": 1886,
-    "lenguaje": "Russian",
-    "paginas": 194,
+    "isbn": "9780140447873",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/stories-of-anton-chekhov.jpg",
-    "link": "https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov"
+    "imageLink": "/images/stories-of-anton-chekhov.jpg"
   },
   {
+    "id_categoria": 14,
     "titulo": "Nostromo",
     "autor": "Joseph Conrad",
-    "pais": "United Kingdom",
-    "anhio": 1904,
-    "lenguaje": "English",
-    "paginas": 320,
+    "isbn": "9780140186357",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/nostromo.jpg",
-    "link": "https://en.wikipedia.org/wiki/Nostromo"
+    "imageLink": "/images/nostromo.jpg"
   },
   {
+    "id_categoria": 15,
     "titulo": "Great Expectations",
     "autor": "Charles Dickens",
-    "pais": "United Kingdom",
-    "anhio": 1861,
-    "lenguaje": "English",
-    "paginas": 194,
+    "isbn": "9780141439563",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/great-expectations.jpg",
-    "link": "https://en.wikipedia.org/wiki/Great_Expectations"
+    "imageLink": "/images/great-expectations.jpg"
   },
   {
+    "id_categoria": 16,
     "titulo": "Jacques the Fatalist",
     "autor": "Denis Diderot",
-    "pais": "France",
-    "anhio": 1796,
-    "lenguaje": "French",
-    "paginas": 596,
+    "isbn": "9780140441796",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/jacques-the-fatalist.jpg",
-    "link": "https://en.wikipedia.org/wiki/Jacques_the_Fatalist"
+    "imageLink": "/images/jacques-the-fatalist.jpg"
   },
   {
+    "id_categoria": 17,
     "titulo": "Berlin Alexanderplatz",
     "autor": "Alfred Döblin",
-    "pais": "Germany",
-    "anhio": 1929,
-    "lenguaje": "German",
-    "paginas": 600,
+    "isbn": "9780142181495",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/berlin-alexanderplatz.jpg",
-    "link": "https://en.wikipedia.org/wiki/Berlin_Alexanderplatz"
+    "imageLink": "/images/berlin-alexanderplatz.jpg"
   },
   {
+    "id_categoria": 18,
     "titulo": "Crime and Punishment",
     "autor": "Fyodor Dostoevsky",
-    "pais": "Russia",
-    "anhio": 1866,
-    "lenguaje": "Russian",
-    "paginas": 551,
+    "isbn": "9780140449136",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/crime-and-punishment.jpg",
-    "link": "https://en.wikipedia.org/wiki/Crime_and_Punishment"
+    "imageLink": "/images/crime-and-punishment.jpg"
   },
   {
+    "id_categoria": 19,
     "titulo": "The Idiot",
     "autor": "Fyodor Dostoevsky",
-    "pais": "Russia",
-    "anhio": 1869,
-    "lenguaje": "Russian",
-    "paginas": 656,
+    "isbn": "9780140447927",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/the-idiot.jpg",
-    "link": "https://en.wikipedia.org/wiki/The_Idiot"
+    "imageLink": "/images/the-idiot.jpg"
   },
   {
+    "id_categoria": 20,
     "titulo": "The Possessed",
     "autor": "Fyodor Dostoevsky",
-    "pais": "Russia",
-    "anhio": 1872,
-    "lenguaje": "Russian",
-    "paginas": 768,
+    "isbn": "9780141441412",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/the-possessed.jpg",
-    "link": "https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)"
+    "imageLink": "/images/the-possessed.jpg"
   },
   {
+    "id_categoria": 21,
     "titulo": "The Brothers Karamazov",
     "autor": "Fyodor Dostoevsky",
-    "pais": "Russia",
-    "anhio": 1880,
-    "lenguaje": "Russian",
-    "paginas": 824,
+    "isbn": "9780140449242",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/the-brothers-karamazov.jpg",
-    "link": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov"
+    "imageLink": "/images/the-brothers-karamazov.jpg"
   },
   {
+    "id_categoria": 22,
     "titulo": "Middlemarch",
     "autor": "George Eliot",
-    "pais": "United Kingdom",
-    "anhio": 1871,
-    "lenguaje": "English",
-    "paginas": 800,
+    "isbn": "9780141439549",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/middlemarch.jpg",
-    "link": "https://en.wikipedia.org/wiki/Middlemarch"
+    "imageLink": "/images/middlemarch.jpg"
   },
   {
+    "id_categoria": 23,
     "titulo": "Invisible Man",
     "autor": "Ralph Ellison",
-    "pais": "United States",
-    "anhio": 1952,
-    "lenguaje": "English",
-    "paginas": 581,
+    "isbn": "9780679732761",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/invisible-man.jpg",
-    "link": "https://en.wikipedia.org/wiki/Invisible_Man"
+    "imageLink": "/images/invisible-man.jpg"
   },
   {
+    "id_categoria": 24,
     "titulo": "Medea",
     "autor": "Euripides",
-    "pais": "Greece",
-    "anhio": -431,
-    "lenguaje": "Greek",
-    "paginas": 104,
+    "isbn": "9780140441291",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/medea.jpg",
-    "link": "https://en.wikipedia.org/wiki/Medea_(play)"
+    "imageLink": "/images/medea.jpg"
   },
   {
+    "id_categoria": 25,
     "titulo": "Absalom, Absalom!",
     "autor": "William Faulkner",
-    "pais": "United States",
-    "anhio": 1936,
-    "lenguaje": "English",
-    "paginas": 313,
+    "isbn": "9780679600720",
     "disponibilidad": true,
     "cantidad": 2,
-    "imageLink": "images/absalom-absalom.jpg",
-    "link": "https://en.wikipedia.org/wiki/Absalom,_Absalom!"
+    "imageLink": "/images/absalom-absalom.jpg"
   }
 ]

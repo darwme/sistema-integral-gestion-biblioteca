@@ -1,0 +1,128 @@
+{
+  "Persona": [
+    {
+      "id_persona": "c69e9c52-53a0-4e3c-a289-6f5b7d08e7e2",
+      "nombres": "Juan",
+      "apellidos": "Perez",
+      "dni": "12345678",
+      "correo": "juanperez@example.com",
+      "telefono": "123456789"
+    },
+    {
+      "id_persona": "82ab5f5e-22bc-4a24-9c05-45ff5ebd2e31",
+      "nombres": "Maria",
+      "apellidos": "Gonzalez",
+      "dni": "87654321",
+      "correo": "mariagonzalez@example.com",
+      "telefono": "987654321"
+    }
+  ],
+  "Cliente": [
+    {
+      "id_cliente": "fdbe68e0-60bb-4e11-8976-9e9f43acce67",
+      "id_persona": "c69e9c52-53a0-4e3c-a289-6f5b7d08e7e2",
+      "fecha_registro": "2023-05-10",
+      "activo": true
+    },
+    {
+      "id_cliente": "e302bd75-251e-4e5e-b55b-4647c71c5e30",
+      "id_persona": "82ab5f5e-22bc-4a24-9c05-45ff5ebd2e31",
+      "fecha_registro": "2022-12-15",
+      "activo": true
+    }
+  ],
+  "Personal_de_apoyo": [
+    {
+      "id_personal": "8b1cc2d8-d3b9-4f11-9215-6f1f2f34b8a2",
+      "id_persona": "1d30f9b9-d22f-4891-a8e3-8653b93a2b62",
+      "horas_trabajo": 40,
+      "cargo": "Asistente de biblioteca"
+    },
+    {
+      "id_personal": "6f07b3b3-9ad8-4922-bb52-9f929e7ee601",
+      "id_persona": "0c3c0677-5456-4c5b-85f1-40802cf62b89",
+      "horas_trabajo": 35,
+      "cargo": "Auxiliar de biblioteca"
+    }
+  ],
+  "Categoria": [
+    {
+      "id_categoria": 1,
+      "nombre": "Ficción",
+      "descripcion": "Libros de narrativa imaginativa"
+    },
+    {
+      "id_categoria": 2,
+      "nombre": "No ficción",
+      "descripcion": "Libros basados en hechos reales"
+    }
+  ],
+  "Libro": [
+    {
+      "id_libro": "1f5b2dc5-6813-4762-b3f7-c62434537ec2",
+      "id_categoria": 1,
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "isbn": "9780307474728",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "imageLink": "https://example.com/cien-anos-soledad.jpg"
+    },
+    {
+      "id_libro": "a631a7f3-2929-4f1a-aae2-3dd40fd44e53",
+      "id_categoria": 2,
+      "titulo": "Sapiens: De animales a dioses",
+      "autor": "Yuval Noah Harari",
+      "isbn": "9780062316097",
+      "disponibilidad": true,
+      "cantidad": 3,
+      "imageLink": "https://example.com/sapiens.jpg"
+    }
+  ],
+  "Prestamo": [
+    {
+      "id_prestamo": "8ef1d18d-8e27-4684-9538-7ec1d358f3a4",
+      "id_cliente": "fdbe68e0-60bb-4e11-8976-9e9f43acce67",
+      "id_libro": "1f5b2dc5-6813-4762-b3f7-c62434537ec2",
+      "fecha_prestamo": "2023-06-20",
+      "fecha_devolucion": "2023-07-10",
+      "devuelto": true
+    },
+    {
+      "id_prestamo": "589b81f4-52a4-4d02-96d6-d26b423cd312",
+      "id_cliente": "e302bd75-251e-4e5e-b55b-4647c71c5e30",
+      "id_libro": "a631a7f3-2929-4f1a-aae2-3dd40fd44e53",
+      "fecha_prestamo": "2023-08-15",
+      "fecha_devolucion": null,
+      "devuelto": false
+    }
+  ],
+  "Morosidad": [
+    {
+      "id_morosidad": 1,
+      "id_cliente": "e302bd75-251e-4e5e-b55b-4647c71c5e30",
+      "monto_deuda": 20.5,
+      "detalle": "Retraso en la devolución de libros"
+    },
+    {
+      "id_morosidad": 2,
+      "id_cliente": "fdbe68e0-60bb-4e11-8976-9e9f43acce67",
+      "monto_deuda": 15.75,
+      "detalle": "Daño a libro prestado"
+    }
+  ],
+  "Pago_penalizacion": [
+    {
+      "id_pago": 1,
+      "id_morosidad": 1,
+      "fecha_pago": "2023-09-01",
+      "monto_pago": 10
+    },
+    {
+      "id_pago": 2,
+      "id_morosidad": 2,
+      "fecha_pago": "2023-07-25",
+      "monto_pago": 5.75
+    }
+  ]
+}

@@ -1,1 +1,39 @@
-GET http://localhost:1234/api/v1/books/2c8d250d-af89-41ee-9042-81694675a59f
+### RECUPERAR TODAS LOS LIBROS
+GET http://localhost:1234/libros
+
+### RECUPERAR LIBRO POR ID
+GET http://localhost:1234/libros/df01a75b-c912-11ee-b48f-9ea2471067db
+
+### RECUPERAR LAS PELICULAS CON CANTIDAD 2
+GET http://localhost:1234/libros?autor=Unknown
+
+### CREAR LIBRO CON POST
+POST http://localhost:1234/libros
+Content-Type: application/json
+
+{
+  "id_categoria": 1,
+  "titulo": "Pride and Prejudice 43",
+  "autor": "Jane Auste1",
+  "isbn": "7978014625491",
+  "disponibilidad": true,
+  "cantidad": 2,
+  "imageLink": "/images/le-pere-goriot.jpg"
+}
+
+### ACTUALIZAR LIBRO CON PATCH
+
+PATCH http://localhost:1234/libros/2318fc33-c92e-11ee-9278-7e5fbdfa302c
+Content-Type: application/json
+
+{
+    "autor": "Darwin Mendoza"
+}
+
+### ELIMINAR LIBRO CON DELETE
+DELETE http://localhost:1234/libros/2318fc33-c92e-11ee-9278-7e5fbdfa302c
+
+
+
+
+

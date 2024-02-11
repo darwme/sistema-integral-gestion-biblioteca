@@ -1,13 +1,11 @@
 import { Router } from "express";
+import { LibroController } from "../../controllers/libro.js";
 
-const librosRouter = Router();
+export const librosRouter = Router();
 
-librosRouter.get("/", (req, res) => {
-  res.send("Hello from book");
-});
+librosRouter.get("/", LibroController.getAll);
+librosRouter.post("/", LibroController.create);
 
-librosRouter.get("/:id", (req, res) => {
-  res.send("Hello from book id");
-});
-
-export default librosRouter;
+librosRouter.get("/:id_libro", LibroController.getById);
+librosRouter.delete("/:id_libro", LibroController.delete);
+librosRouter.patch("/:id_libro", LibroController.update);
