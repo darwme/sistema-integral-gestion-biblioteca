@@ -1,5 +1,4 @@
 import express from "express";
-import dotenv from "dotenv";
 
 import { librosRouter } from "./src/routes/libro/libro.js";
 import { corsMiddleware } from "./src/middlewares/cors.js";
@@ -7,7 +6,6 @@ import { corsMiddleware } from "./src/middlewares/cors.js";
 const app = express();
 app.disable("x-powered-by");
 
-dotenv.config();
 app.use(express.json());
 app.use(corsMiddleware());
 
