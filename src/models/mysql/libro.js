@@ -1,20 +1,5 @@
 import mysql from "mysql2/promise";
-import dotenv from "dotenv";
-dotenv.config();
-
-const dbUrl = new URL(process.env.DATABASE_URL);
-const sslOptions = {
-  rejectUnauthorized: true,
-};
-
-const config = {
-  host: dbUrl.hostname,
-  port: dbUrl.port,
-  user: dbUrl.username,
-  password: dbUrl.password,
-  database: dbUrl.pathname.slice(1),
-  ssl: sslOptions,
-};
+import { config } from "../../config/mysql.js";
 
 const connection = await mysql.createConnection(config);
 
@@ -124,8 +109,8 @@ export class LibroModel {
     } = inputTemp;
 
     for (const prop in inputTemp) {
-      if (input[prop] === undefined) {
-        delete input[prop];
+      if (inputTemp[prop] === undefined) {
+        delete inputTemp[prop];
       }
     }
 
