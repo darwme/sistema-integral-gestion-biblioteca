@@ -1,6 +1,7 @@
 import express from "express";
 
 import librosAPIRouter from "./src/routes/api/v1/libro.js";
+import clienteAPIRouter from "./src/routes/api/v1/cliente.js";
 import createError from "http-errors";
 import { corsMiddleware } from "./src/middlewares/cors.js";
 import connectDB from "./src/config/mondodb.js";
@@ -17,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/libros", librosAPIRouter);
+app.use("/api/clientes", clienteAPIRouter);
 
 const port = process.env.PORT ?? 3000;
 

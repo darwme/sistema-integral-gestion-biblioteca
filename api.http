@@ -40,5 +40,16 @@ DELETE http://localhost:1234/api/libros/65d4d69287392a6da58c232f
 
 
 
+### CREAR CLIENTE Y USUARIO CON POST
+POST http://localhost:1234/api/clientes
+Content-Type: application/json
 
-
+{
+  "nombres": "Tylorea",
+  "apellidos": "Swifta",
+  "celular": "123456789",
+  "usuario": "tylor2321",
+  "password": "1234561",
+  "email_institucional": "22111mon24@gmail.com",
+  "codigo_institucional": 12413456
+}
